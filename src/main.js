@@ -12,15 +12,32 @@ import {
   Button,
   Layout,
   Icon,
-  Drawer,
-  Radio,
-  Menu,
-  Form,
-  Input,
-  Select,
-  LocaleProvider,
+  Tooltip,
   Dropdown,
-  DatePicker
+  Avatar,
+  Spin,
+  AutoComplete,
+  Input,
+  Menu,
+  Popover,
+  Badge,
+  Tabs,
+  List,
+  Tag,
+  Row,
+  Col,
+  Card,
+  DatePicker,
+  Radio,
+  Table,
+  Divider,
+  Breadcrumb,
+  Form,
+  Select,
+  Popconfirm,
+  Modal,
+  LocaleProvider,
+  Drawer
 } from "ant-design-vue";
 import Authorized from "./components/Authorized";
 import Auth from "./directives/auth";
@@ -28,18 +45,71 @@ import "highlight.js/styles/github.css";
 
 Vue.config.productionTip = false;
 
+const { Content, Header, Footer, Sider } = Layout;
+const MenuItem = Menu.Item;
+const MenuDivider = Menu.Divider;
+const MenuSubMenu = Menu.SubMenu;
+const TabsTabPane = Tabs.TabPane;
+const ListItem = List.Item;
+const ListItemMeta = List.Item.Meta;
+const { RangePicker } = DatePicker;
+const RadioGroup = Radio.Group;
+const RadioButton = Radio.Button;
+const CardGrid = Card.Grid;
+const CardMeta = Card.Meta;
+const BreadcrumbItem = Breadcrumb.Item;
+const FormItem = Form.Item;
+
 Vue.use(Button);
+Vue.use(Button.Group);
 Vue.use(Layout);
 Vue.use(Icon);
-Vue.use(Drawer);
-Vue.use(Radio);
-Vue.use(Menu);
-Vue.use(Form);
-Vue.use(Input);
-Vue.use(Select);
-Vue.use(LocaleProvider);
+Vue.use(Tooltip);
 Vue.use(Dropdown);
+Vue.use(Avatar);
+Vue.use(Spin);
+Vue.use(AutoComplete);
+Vue.use(Input);
+Vue.use(Menu);
+Vue.use(MenuItem);
+Vue.use(MenuDivider);
+Vue.use(Popover);
+Vue.use(Badge);
+Vue.use(Tabs);
+Vue.use(TabsTabPane);
+Vue.use(List);
+Vue.use(ListItem);
+Vue.use(ListItemMeta);
+Vue.use(Tag);
+Vue.use(Tag.CheckableTag);
+Vue.use(MenuSubMenu);
+Vue.use(Row);
+Vue.use(Col);
+Vue.use(Card);
+Vue.use(CardGrid);
+Vue.use(CardMeta);
 Vue.use(DatePicker);
+Vue.use(RangePicker);
+Vue.use(Radio);
+Vue.use(RadioGroup);
+Vue.use(RadioButton);
+Vue.use(Table);
+Vue.use(Divider);
+Vue.use(Breadcrumb);
+Vue.use(BreadcrumbItem);
+Vue.use(Form);
+Vue.use(FormItem);
+Vue.use(Select);
+Vue.use(Select.Option);
+Vue.use(Popconfirm);
+Vue.use(Modal);
+Vue.use(Content);
+Vue.use(Header);
+Vue.use(Footer);
+Vue.use(Sider);
+Vue.use(LocaleProvider);
+Vue.use(Drawer);
+
 Vue.component("Authorized", Authorized);
 Vue.use(Auth);
 Vue.use(VueI18n);

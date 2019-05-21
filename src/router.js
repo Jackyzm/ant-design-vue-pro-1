@@ -60,7 +60,9 @@ const router = new Router({
               name: "analysis",
               meta: { title: "分析页" },
               component: () =>
-                import(/* webpackChunkName: "dashboard" */ "./views/Dashboard/Analysis")
+                import(
+                  /* webpackChunkName: "dashboard" */ "./views/Dashboard/Analysis"
+                )
             }
           ]
         },
@@ -94,19 +96,25 @@ const router = new Router({
                   path: "/form/step-form/info",
                   name: "info",
                   component: () =>
-                    import(/* webpackChunkName: "form" */ "./views/Forms/StepForm/Step1")
+                    import(
+                      /* webpackChunkName: "form" */ "./views/Forms/StepForm/Step1"
+                    )
                 },
                 {
                   path: "/form/step-form/confirm",
                   name: "confirm",
                   component: () =>
-                    import(/* webpackChunkName: "form" */ "./views/Forms/StepForm/Step2")
+                    import(
+                      /* webpackChunkName: "form" */ "./views/Forms/StepForm/Step2"
+                    )
                 },
                 {
                   path: "/form/step-form/result",
                   name: "result",
                   component: () =>
-                    import(/* webpackChunkName: "form" */ "./views/Forms/StepForm/Step3")
+                    import(
+                      /* webpackChunkName: "form" */ "./views/Forms/StepForm/Step3"
+                    )
                 }
               ]
             }

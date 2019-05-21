@@ -30,7 +30,11 @@ module.exports = {
     plugins: [themePlugin, new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/)],
     resolve: {
       alias: {
-        "@ant-design/icons/lib/dist$": path.resolve(__dirname, "./src/icons.js")
+        "@ant-design/icons/lib/dist$": path.resolve(
+          __dirname,
+          "./src/icons.js"
+        ),
+        "@": path.resolve(__dirname, "./src")
       }
     }
   },
