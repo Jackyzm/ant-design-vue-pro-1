@@ -19,7 +19,6 @@ const mutations = {
 
 const actions = {
   getChartData({ commit }) {
-    commit("changeLoading", true);
     getCharts().then(res => {
       if (res) {
         commit("setChartData", res.data);

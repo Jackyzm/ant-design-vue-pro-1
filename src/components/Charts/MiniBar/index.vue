@@ -82,4 +82,6 @@ export default {
 };
 </script>
 
-<style lang="less" scoped></style>
+<style lang="less">
+@import "../MiniChart.less";
+</style>

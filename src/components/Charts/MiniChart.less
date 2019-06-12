@@ -1,0 +1,32 @@
+.miniChart {
+    position: relative;
+    width: 100%;
+
+    .chartContent {
+        position: absolute;
+        width: 100%;
+
+        >div {
+            margin: 0 -5px;
+
+            >div {
+                &:first-child {
+                    >div:first-child {
+                        width: 100% !important;
+
+                        >canvas {
+                            width: 100% !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .chartLoading {
+        position: absolute;
+        top: 16px;
+        left: 50%;
+        margin-left: -7px;
+    }
+}

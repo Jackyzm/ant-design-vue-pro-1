@@ -5,7 +5,8 @@
         <ChartCard :bordered="false" title="总销售额" :contentHeight="46">
           <template slot="action">
             <a-tooltip title="指标说明">
-              <a-icon type="info-circle-o" />
+              <IconFont type="ellipsis" />
+              <a-icon type="apple" />
             </a-tooltip>
           </template>
           <template slot="total">

@@ -63,7 +63,7 @@ const FormItem = Form.Item;
 Vue.use(Button);
 Vue.use(Button.Group);
 Vue.use(Layout);
-Vue.use(Icon);
+Vue.component(Icon.name, Icon);
 Vue.use(Tooltip);
 Vue.use(Dropdown);
 Vue.use(Avatar);
@@ -124,7 +124,7 @@ const i18n = new VueI18n({
 });
 
 const IconFont = Icon.createFromIconfontCN({
-  scriptUrl: "//at.alicdn.com/t/font_1154049_w87h4oeytph.js" // 在 iconfont.cn 上生成
+  scriptUrl: "//at.alicdn.com/t/font_8d5l8fzk5b87iudi.js" // 在 iconfont.cn 上生成
 });
 
 Vue.component("IconFont", IconFont);
